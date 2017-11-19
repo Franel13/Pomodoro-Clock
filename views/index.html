@@ -1,0 +1,77 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro Clock</title>
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Pomodoro Clock
+      </h1>
+    </header>
+
+    <main>
+      <section class="timer_lengths">
+        <div class="aside">
+          <h3>Work Length</h3>
+          <button id="decrease_work">-</button>
+          <span id="work_length">25</span>
+          <button id="increase_work">+</button>
+        </div>
+        <div class="aside">
+          <h3>Break Length</h3>
+          <button id="decrease_break">-</button>
+          <span id="break_length">5</span>
+          <button id="increase_break">+</button>
+        </div>
+      </section>
+      <section class="work_timer">
+        <h3>Work Time</h3>
+        <div class="work-timer"></div>
+      </section>
+      <section class="break_timer">
+        <h3>Break Time</h3>
+        <div class="break-timer"></div>
+      </section>
+      <section class="control_buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </section>
+      
+      
+      
+    </main>
+
+    <footer>
+      <small>©George Zaharia</small>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>

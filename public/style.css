@@ -1,0 +1,167 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+  margin: 25px;
+  background-color: #5b5055;
+  color: #c4c4c4;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+  margin-bottom: -5px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+button {
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
+  border-radius: 3px;
+  background-color: #424242;
+  border: 1px solid #424242;
+  box-shadow: 2px 2px #a8a4a4;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #ededed;
+  vertical-align: middle;
+  line-height: 0px;
+  padding-bottom: 12px;
+}
+
+button:hover {
+  background-color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+  box-shadow: 2px 2px #424242;
+  color: #3a3535;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+section {
+  width: 700px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.aside {
+  width: 300px;
+  height: 80px;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.aside span {
+  font-size: 20px;
+}
+
+.timer_lengths {
+  margin-bottom: 40px;
+}
+
+.flip-clock-wrapper {
+  width: 300px;
+  margin: 40px auto;
+  margin-top: 20px;
+}
+
+.running {
+  color: #58a303;
+}
+
+.stopped {
+  color: #960303;
+}
+
+.yellow {
+  color: #a5a313;
+}
+
+.control_buttons button {
+  font-size: 20px;
+  width: 80px;
+  margin: 3px;
+  line-height: 36px;
+}
+
+#start {
+  background-color: #58a303;
+  border-color: #58a303;
+  box-shadow: 2px 2px #203a04;
+}
+
+#start:hover {
+  background-color: #203a04;
+  border-color: #203a04;
+  box-shadow: 2px 2px #58a303;
+  color: #ededed;
+}
+
+#start:active {
+  box-shadow: none;
+}
+
+#stop {
+  background-color: #960303;
+  border-color: #960303;
+  box-shadow: 2px 2px #560404;
+}
+
+#stop:hover {
+  background-color: #560404;
+  border-color: #560404;
+  box-shadow: 2px 2px #960303;
+  color: #ededed;
+}
+
+#stop:active {
+  box-shadow: none;
+}
+
+#reset {
+  background-color: #a5a313;
+  border-color: #a5a313;
+  box-shadow: 2px 2px #605f0c;
+}
+
+#reset:hover {
+  background-color: #605f0c;
+  border-color: #605f0c;
+  box-shadow: 2px 2px #a5a313;
+  color: #ededed;
+}
+
+#reset:active {
+  box-shadow: none;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
